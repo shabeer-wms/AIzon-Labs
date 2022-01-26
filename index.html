@@ -229,7 +229,7 @@
 
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="testimonials">
+    <!--<section id="team" class="testimonials">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h2>Team</h2>
@@ -259,7 +259,7 @@
             <!-- End testimonial item -->
 
 
-            <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
                   <img src="assets/img/team/sanif.png" class="testimonial-img" alt="">
@@ -275,16 +275,14 @@
                 </p>
 
               </div>
-            </div><!-- End testimonial item -->
-          </div>
+            </div> End testimonial item -->
+          <!--</div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section><!-- End team Section -->
+    </section>--><!-- End team Section -->
 
-
-
-    <div class="available-app-area" id="goal">
+    <!--<div class="available-app-area" id="goal">
       <div class="container">
 
         <div class="row d-flex justify-content-between">
@@ -313,8 +311,47 @@
 
         </div>
       </div>
-    </div>
+    </div>-->
 
+
+    <div class="testimonial-item" data-aos="fade-up">
+    <div class='container mx-auto mt-5 col-md-10 mt-100'>
+      <header class="section-header">
+        <h2>Team</h2>
+        <p>Our hard working team</p>
+      </header>
+      <div class="row justify-content-center pb-5">
+          <div class="card col-md-3 mt-100 " id="card_a">
+              <div class="card-content">
+                  <div class="card-body p-0">
+                      <div class="profile"> <img src="./assets/img/team/jaisal.png"> </div>
+                      <div class="card-title mt-4"> Jaisal Ashraf<br /> <small>CEO, Co-Founder</small> </div>
+                      <div class="card-subtitle">
+                          <p> <small class="text-muted"> A Tech Savvy | Entrepreneur with 5 years industrial experience working for tech giants including
+                            Intel, Nokia, Ericsson and Broadcom. Jaisal holds a Dual Master degree Majoring in Embedded Systems
+                            and Minoring in Entrepreneurship from KTH Royal Institute of Technology, Sweden and Aalto University,
+                            Finland.</small> </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card col-md-3 mt-100" id="card_b">
+              <div class="card-content">
+                  <div class="card-body p-0">
+                      <div class="profile"> <img src="./assets/img/team/sanif.png"> </div>
+                      <div class="card-title mt-4"> Sanif SS<br /> <small>CTO, Co-Founder</small> </div>
+                      <div class="card-subtitle">
+                          <p> <small class="text-muted">Programming enthusiast having 6+ years of industry experience with a Bachelor's degree in Computer
+                            Science. Sanif has worked for multiple startups and was a former employee of Mercedes-Benz R&D
+                            bangalore as a software developer. He finds passion in coding and always love to explore and learn new
+                            things.</small> </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>                        
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -487,7 +524,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <center>
-            <h5 class="modal-title" id="exampleModalLongTitle">Ecommerce and web applications</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"><strong>Ecommerce and web applications</strong></h5>
           </center>
 
           </button>
@@ -513,7 +550,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <center>
-            <h5 class="modal-title" id="exampleModalLongTitle">Enterprise mobility solutions</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"><strong>Enterprise mobility solutions</strong></h5>
           </center>
 
           </button>
@@ -539,7 +576,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <center>
-            <h5 class="modal-title" id="exampleModalLongTitle">AI, Big Data and Machine learning</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"><strong>AI, Big Data and Machine learning</strong></h5>
           </center>
 
           </button>
@@ -569,7 +606,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <center>
-            <h5 class="modal-title align-items-center" id="exampleModalLongTitle">ASIC/FPGA design and verification</h5>
+            <h5 class="modal-title align-items-center" id="exampleModalLongTitle"><strong>ASIC/FPGA design and verification</strong></h5>
           </center>
 
           </button>
@@ -595,7 +632,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <center>
-            <h5 class="modal-title" id="exampleModalLongTitle">Embedded Hardware design, development and testing</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"><strong>Embedded Hardware design, development and testing</strong></h5>
           </center>
 
           </button>
@@ -622,7 +659,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <center>
-            <h5 class="modal-title" id="exampleModalLongTitle">Embedded software development</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"><strong>Embedded software development</strong></h5>
           </center>
 
           </button>
@@ -652,6 +689,8 @@
     var feature = document.getElementById("features_img");
     var feature_main = document.getElementById("features_main_img");
     var value_2 = document.getElementById("values-2");
+    var card_a = document.getElementById("card_a");
+    var card_b = document.getElementById("card_b");
     icon.onclick = function () {
       document.body.classList.toggle("dark-mode");
       if (document.body.classList.contains("dark-mode")) {
@@ -659,11 +698,15 @@
         feature.src = 'assets/img/features/features - dark.png'
         feature_main.src = 'assets/img/features/features-main - dark.png'
         value_2.src = 'assets/img/values-2 - dark.png'
+        card_a.classList.add("bg-dark");
+        card_b.classList.add("bg-dark");
       } else {
         icon.src = 'assets/img/m3.png';
         feature.src = 'assets/img/features/features.png'
         feature_main.src = 'assets/img/features/features-main.png'
         value_2.src = 'assets/img/values-2.png'
+        card_a.classList.remove("bg-dark");
+        card_b.classList.remove("bg-dark");
       }
     }
 
