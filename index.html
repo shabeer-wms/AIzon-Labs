@@ -40,7 +40,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo1.png" alt="">
+        <img src="assets/img/logo1.png" id="logo" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -521,7 +521,7 @@
   <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
         <div class="modal-header">
           <center>
             <h5 class="modal-title" id="exampleModalLongTitle"><strong>Ecommerce and web applications</strong></h5>
@@ -547,7 +547,7 @@
   <div class="modal fade " id="m2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
         <div class="modal-header">
           <center>
             <h5 class="modal-title" id="exampleModalLongTitle"><strong>Enterprise mobility solutions</strong></h5>
@@ -573,7 +573,7 @@
   <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
         <div class="modal-header">
           <center>
             <h5 class="modal-title" id="exampleModalLongTitle"><strong>AI, Big Data and Machine learning</strong></h5>
@@ -603,7 +603,7 @@
   <div class="modal fade" id="m4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
         <div class="modal-header">
           <center>
             <h5 class="modal-title align-items-center" id="exampleModalLongTitle"><strong>ASIC/FPGA design and verification</strong></h5>
@@ -629,7 +629,7 @@
   <div class="modal fade" id="m5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
         <div class="modal-header">
           <center>
             <h5 class="modal-title" id="exampleModalLongTitle"><strong>Embedded Hardware design, development and testing</strong></h5>
@@ -656,7 +656,7 @@
   <div class="modal fade" id="m6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
         <div class="modal-header">
           <center>
             <h5 class="modal-title" id="exampleModalLongTitle"><strong>Embedded software development</strong></h5>
@@ -691,6 +691,7 @@
     var value_2 = document.getElementById("values-2");
     var card_a = document.getElementById("card_a");
     var card_b = document.getElementById("card_b");
+    var logo = document.getElementById("logo");
     icon.onclick = function () {
       document.body.classList.toggle("dark-mode");
       if (document.body.classList.contains("dark-mode")) {
@@ -699,6 +700,7 @@
         feature_main.src = 'assets/img/features/features-main - dark.png'
         value_2.src = 'assets/img/values-2 - dark.png'
         card_a.classList.add("bg-dark");
+        logo.src = 'assets/img/logo1-dark.png'
         card_b.classList.add("bg-dark");
       } else {
         icon.src = 'assets/img/m3.png';
@@ -707,11 +709,11 @@
         value_2.src = 'assets/img/values-2.png'
         card_a.classList.remove("bg-dark");
         card_b.classList.remove("bg-dark");
+        logo.src = 'assets/img/logo1-dark.png'
       }
     }
 
   </script>
-
 
   <!-------Other Scripts---------->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
